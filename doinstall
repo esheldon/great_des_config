@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [[ $# -lt 1 ]]; then
+    echo "doinstall dir"
+    exit 1
+fi
+
+dir=$1
+
+echo "rsyncing to $dir"
+
+if [[ ! -e $dir ]]; then
+    echo "Creating directory $dir"
+    mkdir -p $dir
+fi
+
+rsync -av \
+    --exclude "*svn*" \
+    --exclude "*git*" \
+    --exclude "*swp" \
+    --exclude "*~" \
+    --exclude "*pyc" ./ $dir/
