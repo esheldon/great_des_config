@@ -3,7 +3,7 @@
 run: "sfit-c02"
 fitter: "isample"
 
-great_des_githash: "bef0be5fc969eca5c4cc13a3a3c8b7c685df6403"
+great_des_githash: "e3682e0da14b00ea57069dfc61333d5686a4c6bc"
 ngmix_githash: "16d4b1006b17ecf7b94381a0e5f57c91a5f83bb4"
 great3_githash: "c8de27c74c84879d7d8c70a95d2cac44c427eac8"
 
