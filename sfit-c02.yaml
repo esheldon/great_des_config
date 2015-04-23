@@ -1,4 +1,6 @@
-run: "sfit-c01"
+# iter on sampling
+# fix bug copying size
+run: "sfit-c02"
 fitter: "isample"
 
 great_des_githash: "bef0be5fc969eca5c4cc13a3a3c8b7c685df6403"
@@ -45,7 +47,7 @@ psf_pars:
 
 isample_pars:
 
-    nsample: [2000]
+    nsample: [500,2000]
     ifactor: 1.0
     df: 2.1
     min_err: [1.0e-4,1.0e-4,1.0e-3,1.0e-3,1.0e-4,1.0e-4]
