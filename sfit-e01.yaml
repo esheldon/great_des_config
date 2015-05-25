@@ -1,8 +1,8 @@
 run: "sfit-e01"
 fitter: "isample"
 
-great_des_githash: "bef0be5fc969eca5c4cc13a3a3c8b7c685df6403"
-ngmix_githash: "16d4b1006b17ecf7b94381a0e5f57c91a5f83bb4"
+great_des_githash: "863470a332ade92030c9c2173e257ccb7349fcc3"
+ngmix_githash: "6bb1487f0822071c61fb46107004998d3637a794"
 great3_githash: "c8de27c74c84879d7d8c70a95d2cac44c427eac8"
 
 
@@ -48,9 +48,9 @@ isample_pars:
     min_err: [1.0e-4,1.0e-4,1.0e-3,1.0e-3,1.0e-4,1.0e-4]
     max_err: [1.0,1.0,1.0,1.0,1.0,1.0]
 
-    cov_pars:
-        h: 1.0e-3
-        m: 5.0
+cov_pars:
+    h: 1.0e-3
+    m: 5.0
 
 
 model_pars:
@@ -58,7 +58,9 @@ model_pars:
 
     joint_prior:
         cen_width: 0.4
-        g_prior_pars: [1.0, 4222.89, 0.0716121, 0.577453]
+        # g_prior_pars: [1.0, 4222.89, 0.0716121, 0.577453]
+        g_prior_pars: [1.0, 3664.43, 0.0690655, 0.581972]
+
 
         TF_prior_run: "sfit-noisefree-e01"
         TF_partype: "log_TF"

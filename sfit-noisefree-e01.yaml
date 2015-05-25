@@ -28,9 +28,10 @@ max_pars:
     lm_pars:
         maxfev: 4000
 
-    cov_pars:
-        h: 1.0e-3
-        m: 5.0
+
+cov_pars:
+    h: 1.0e-3
+    m: 5.0
 
 
 psf_pars:
