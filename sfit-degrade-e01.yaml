@@ -1,8 +1,8 @@
 run: "sfit-degrade-e01"
 fitter: "metacal-degrade"
 
-great_des_githash: "f1f990bfc0e2469484ac15c7ba2b6506a5f1a252"
-ngmix_githash: "8efd981d3a8bd04d97905687c59bec2ff9fe2502"
+great_des_githash: "8875805a1b5cda61a3ad19f77a94888f4da6939f"
+ngmix_githash: "c04394e96afcba8d1cf75e838998a26e81822cf3"
 
 
 # min s2n_w from gauss fit before we do regular fit
@@ -29,7 +29,8 @@ nf: 100
 # shear numbers 0-7
 ng: 8
 
-nper: 5000
+# for long queue in lsf
+nper: 12000
 
 max_pars:
     method: 'lm'
