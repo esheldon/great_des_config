@@ -11,6 +11,7 @@ noisefree: True
 
 calc_weight: True
 
+# note 006 does not have noisefree images
 gdrun: "nbc-sva1-004"
 
 # number per g number, index 0-1
