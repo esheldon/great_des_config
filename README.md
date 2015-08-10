@@ -1,6 +1,19 @@
 # great_des_config
 config files for great_des runs
 
+metacal
+--------
+- sfit-degrade-e01
+    - deep data run
+- sfit-mcal-e01
+    - just do max like and get metacal mean pars
+    - just doing first 100 in each shear now
+
+
+
+
+
+
 
 m1: -0.00740639 +/- 0.00188541
 m2: -0.00385091 +/- 0.00223095
