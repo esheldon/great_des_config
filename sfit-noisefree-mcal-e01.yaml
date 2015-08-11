@@ -1,3 +1,4 @@
+# not adding noise at all
 run: "sfit-noisefree-mcal-e01"
 fitter: "metacal"
 

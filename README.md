@@ -4,16 +4,36 @@ config files for great_des runs
 metacal
 --------
 - sfit-degrade-e01
-    - deep data run
+    - deep data run, degrading noise to that of the main
+      data
 - sfit-mcal-e01
     - just do max like and get metacal mean pars
     - just doing first 100 in each shear now
 
+- sfit-noisefree-mcal-e01
+    - adding some noise but not a full degrade run
+- sfit-noisefree-mcal-e02
+    - adding some noise but not a full degrade run
+    - seem to recover the shear reasonably well
+    - want to select mcal_s2n_r in the range
+        [10.0**2.9,  10.0**4.0]
+        794.33, 10000.0 
+    - overall
+        m1: 0.00185 +/- 0.00404
+        m2: 0.00328 +/- 0.00276
+        c1: 0.000163 +/- 0.000142
+        c2: 0.000212 +/- 9.67e-05
+    - vs mcal_s2n_r
+    mcal_s2n_r         m1      m1err         m2      m2err
+      1.02e+03    0.00236    0.00453     0.0072    0.00314
+      1.68e+03  -6.59e-05    0.00386   -0.00612    0.00348
+       2.8e+03    0.00727    0.00544    0.00818    0.00932
+      4.63e+03    0.00853     0.0101    0.00685    0.00713
+      7.67e+03    -0.0104     0.0152   -0.00668     0.0144
 
 
-
-
-
+older
+-------
 
 m1: -0.00740639 +/- 0.00188541
 m2: -0.00385091 +/- 0.00223095
