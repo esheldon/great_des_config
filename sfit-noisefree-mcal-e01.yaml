@@ -1,8 +1,8 @@
 run: "sfit-noisefree-mcal-e01"
 fitter: "metacal"
 
-great_des_githash: "8875805a1b5cda61a3ad19f77a94888f4da6939f"
-ngmix_githash: "c04394e96afcba8d1cf75e838998a26e81822cf3"
+great_des_githash: "4e8ab673f39520442b5b5f4ec39ad10be8785cef"
+ngmix_githash: "82017e402ad65df68ffb8b92914afe0bc2077be1"
 
 
 # min s2n_w from gauss fit before we do regular fit
