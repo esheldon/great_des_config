@@ -1,0 +1,73 @@
+# adding extra noise
+run: "sfit-noisefree-mcal-e02"
+fitter: "metacal"
+
+great_des_githash: "4e8ab673f39520442b5b5f4ec39ad10be8785cef"
+ngmix_githash: "82017e402ad65df68ffb8b92914afe0bc2077be1"
+
+
+# min s2n_w from gauss fit before we do regular fit
+min_s2n: 0.0
+
+noisefree: True
+
+# images are "noise free" but there is some noise in the image and whitening
+# has been done.  calculate from a border region
+
+calc_weight: True
+
+# this is 10 times higher than the existing noise
+extra_noise: 0.7
+
+save_g_sens: True
+
+# 006 does not have noisefree images
+#gdrun: "nbc-sva1-006"
+gdrun: "nbc-sva1-004"
+fix_centroid_bug: True
+
+# number per g number, index 0-1
+nf: 100
+
+# shear numbers 0-7
+ng: 8
+
+# for long queue in lsf
+nper: 12000
+
+max_pars:
+    method: 'lm'
+    ntry: 4
+
+    lm_pars:
+        maxfev: 4000
+
+psf_pars:
+    model: "turb"
+    ntry: 20
+    fwhm_guess: 0.9
+    addnoise: 0.0001
+
+round_pars:
+    fitter_type: 'max'
+
+cov_pars:
+    h: 1.0e-3
+    m: 5.0
+
+model_pars:
+    model: "exp"
+
+    joint_prior:
+        cen_width: 0.4
+        # g_prior_pars: [1.0, 4222.89, 0.0716121, 0.577453]
+        g_prior_pars: [1.0, 3664.43, 0.0690655, 0.581972]
+
+
+        TF_prior_run: "sfit-noisefree-e01"
+        TF_partype: "log_TF"
+
+metacal_pars:
+    step: 0.01
+
+use_logpars: True
