@@ -1,7 +1,7 @@
 run: "sfit-degrade-e01"
 fitter: "metacal-degrade"
 
-great_des_githash: "8875805a1b5cda61a3ad19f77a94888f4da6939f"
+great_des_githash: "eef9d8f3e93ba562bb8103e777e79862727c7ac0"
 ngmix_githash: "c04394e96afcba8d1cf75e838998a26e81822cf3"
 
 
