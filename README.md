@@ -7,9 +7,41 @@ metacal
     - had bug not dividing sums by 4 to get mean
     - deep data run, degrading noise to that of the main
       data
+    - checking against self
+        - overall with cuts 
+            [10**0.95, 10**3.0]
+            [8.912509381337454, 1000.0]
+            m1: -0.00246 +/- 0.0055
+            m2: 0.000587 +/- 0.00607
+            c1: 0.00285 +/- 0.000193
+            c2: 0.00316 +/- 0.000212
+    - bins of s2n_r
+       s2n         m1      m1err         m2      m2err
+        14    0.00162    0.00839   -0.00202    0.00725
+      35.6   -0.00372    0.00578    0.00636    0.00859
+        91    0.00259    0.00965   -0.00015     0.0126
+       228   -0.00296     0.0156    0.00933     0.0124
+       579     0.0149     0.0441     0.0509      0.026
+
 - sfit-mcal-e01
     - just do max like and get metacal mean pars
+
     - just doing first 100 in each shear now
+
+    - overall with s2n range [10**0.95, 10**3.0] = [8.91, 1000.0]
+        m1: 0.00169 +/- 0.00427
+        m2: -0.0077 +/- 0.00522
+        c1: 0.000355 +/- 0.000151
+        c2: 0.000714 +/- 0.000183
+    - in bins of s2n_r
+     s2n_r         m1      m1err         m2      m2err         c1      c1err         c2      c2err
+        14   0.000395     0.0116     -0.017     0.0074   0.000218   0.000296    0.00104   0.000191
+      35.6    0.00732    0.00583   -0.00585     0.0102   0.000283   0.000192    0.00059   0.000338
+        91    0.00482    0.00594   -0.00011    0.00689   0.000483   0.000211   0.000591   0.000239
+       228    -0.0206    0.00999    -0.0107     0.0115  -0.000234   0.000367  -0.000231   0.000403
+       574    -0.0182     0.0272     0.0121     0.0235  -0.000904   0.000893    0.00147   0.000752
+
+    - adding cut on size
 
 - sfit-noisefree-mcal-e01
     - adding some noise but not a full degrade run
