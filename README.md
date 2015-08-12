@@ -4,6 +4,7 @@ config files for great_des runs
 metacal
 --------
 - sfit-degrade-e01
+    - had bug not dividing sums by 4 to get mean
     - deep data run, degrading noise to that of the main
       data
 - sfit-mcal-e01
@@ -13,6 +14,7 @@ metacal
 - sfit-noisefree-mcal-e01
     - adding some noise but not a full degrade run
 - sfit-noisefree-mcal-e02
+    - had bug not dividing sums by 4 to get mean
     - adding some noise but not a full degrade run
     - seem to recover the shear reasonably well
     - want to select mcal_s2n_r in the range

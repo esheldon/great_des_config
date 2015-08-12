@@ -25,8 +25,7 @@ nf: 600
 # shear numbers 0-7
 ng: 8
 
-# for long queue in lsf
-nper: 12000
+nper: 5000
 
 max_pars:
     method: 'lm'
