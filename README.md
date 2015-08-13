@@ -3,6 +3,10 @@ config files for great_des runs
 
 metacal
 --------
+- TODO
+    - run with 3 gauss psf
+        - need a degrade version and a regular metacal version
+
 - sfit-degrade-e01
     - had bug not dividing sums by 4 to get mean
     - deep data run, degrading noise to that of the main
