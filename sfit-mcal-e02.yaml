@@ -1,3 +1,4 @@
+# using B&A g prior
 run: "sfit-mcal-e02"
 fitter: "metacal"
 

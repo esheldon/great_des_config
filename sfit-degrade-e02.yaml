@@ -1,3 +1,4 @@
+# using B&A g prior
 run: "sfit-degrade-e02"
 fitter: "metacal-degrade"
 
