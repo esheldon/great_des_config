@@ -4,8 +4,14 @@ config files for great_des runs
 metacal
 --------
 - TODO
+
+    - the TF prior is mucking up the fits a bit because it has
+        a sharp feature in the flux distribution.  Need to either smooth it
+        out some way or maybe just use flat but smooth priors (2-sided erf)
+
     - run with 3 gauss psf
-        - need a degrade version and a regular metacal version
+        - ran the low noise version in degrade-e03
+        - factor of 2 slower: limited by psf fitting
 
 - sfit-degrade-e01
     - had bug not dividing sums by 4 to get mean
@@ -70,6 +76,18 @@ metacal
 - sfit-mcal-e02
     - goes with deep run sfit-degrade-e02
     - using B&A shape prior (previous prior had issues)
+    - overall with no cuts other than g < 1 and flags
+        m1: 0.000935 +/- 0.00133
+        m2: -0.000214 +/- 0.00132
+        c1: 0.000503 +/- 0.000205
+        c2: 0.0008 +/- 0.000204
+
+    - 5 bins s2n [8.91,1000]
+        14  -0.000223    0.00336  -0.000215    0.00337   0.000605   0.000215    0.00127   0.000233
+      35.6   -0.00119     0.0024   -0.00434    0.00239   0.000461   0.000214   0.000578   0.000211
+        91  -0.000366    0.00326   -0.00399    0.00322    0.00035   0.000224   0.000718   0.000213
+       228    -0.0033    0.00562   -0.00481    0.00551   0.000342   0.000275   0.000409   0.000276
+       575   -0.00395     0.0112   -0.00091     0.0111   0.000373   0.000448   0.000753   0.000421
 
 - sfit-noisefree-mcal-e01
     - adding some noise but not a full degrade run
