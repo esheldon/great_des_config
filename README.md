@@ -27,6 +27,21 @@ metacal
        228   -0.00296     0.0156    0.00933     0.0124
        579     0.0149     0.0441     0.0509      0.026
 
+- sfit-degrade-e02
+    - B&A prior to prevent fitting problem
+        m1: 0.00209 +/- 0.00704
+        m2: 0.00376 +/- 0.00414
+        c1: 0.00257 +/- 0.000249
+        c2: 0.00298 +/- 0.000145
+
+- sfit-degrade-e03
+    - 3 gauss psf
+    - B&A prior to prevent fitting problem
+        m1: 0.00233 +/- 0.00394
+        m2: 0.00381 +/- 0.00505
+        c1: 0.00263 +/- 0.000139
+        c2: 0.0031 +/- 0.000178
+
 - sfit-mcal-e01
     - just do max like and get metacal mean pars
 
@@ -52,6 +67,9 @@ metacal
            236   -0.00641     0.0051   -0.00505     0.0065   0.000369   0.000188   0.000517   0.000224
            585  -0.000557    0.00847   -0.00174     0.0122   0.000447   0.000292   0.000866   0.000432
 
+- sfit-mcal-e02
+    - goes with deep run sfit-degrade-e02
+    - using B&A shape prior (previous prior had issues)
 
 - sfit-noisefree-mcal-e01
     - adding some noise but not a full degrade run
