@@ -42,11 +42,8 @@ metacal
 
 - sfit-degrade-e03
     - 3 gauss psf
+    - adding simpler but smoother priors
     - B&A prior to prevent fitting problem
-        m1: 0.00233 +/- 0.00394
-        m2: 0.00381 +/- 0.00505
-        c1: 0.00263 +/- 0.000139
-        c2: 0.0031 +/- 0.000178
 
 - sfit-mcal-e01
     - just do max like and get metacal mean pars
