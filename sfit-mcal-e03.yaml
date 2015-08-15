@@ -1,0 +1,70 @@
+run: "sfit-mcal-e03"
+fitter: "metacal"
+
+great_des_githash: "5480fb7065e25ee1d02d0280d6c64144565198dd"
+ngmix_githash: "f536b38d92e44ac58b2f78f82b7ffc71b0d93380"
+
+# min s2n_w from gauss fit before we do regular fit
+min_s2n: 0.0
+
+noisefree: False
+
+# images are "noise free" but there is some noise in the image and whitening
+# has been done.  calculate from a border region
+
+calc_weight: False
+
+gdrun: "nbc-sva1-006"
+
+# number per g number, index 0-1
+nf: 600
+
+# shear numbers 0-7
+ng: 8
+
+nper: 5000
+
+max_pars:
+    method: 'lm'
+    ntry: 4
+
+    lm_pars:
+        maxfev: 4000
+
+psf_pars:
+    model: "em3"
+    ntry: 20
+    fwhm_guess: 0.9
+    addnoise: 0.0001
+
+round_pars:
+    fitter_type: 'max'
+
+cov_pars:
+    h: 1.0e-3
+    m: 5.0
+
+model_pars:
+    model: "exp"
+
+    sep_prior:
+        cen:
+            width: 0.4
+
+        g:                
+            type: "ba"
+            sigma: 0.25
+
+        T:
+            type: "gmixnd"
+            run: "sfit-degrade-e02"
+            partype: "log_T"
+
+        F:
+            type: "two-sided-erf"
+            pars: [2.5, 0.5, 10.0, 0.5]
+
+metacal_pars:
+    step: 0.01
+
+use_logpars: True
