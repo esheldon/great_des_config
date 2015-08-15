@@ -88,6 +88,13 @@ metacal
            228    -0.0033    0.00562   -0.00481    0.00551   0.000342   0.000275   0.000409   0.000276
            575   -0.00395     0.0112   -0.00091     0.0111   0.000373   0.000448   0.000753   0.000421
 
+- sfit-mcal-e03
+    - goes with deep run sfit-degrade-e03
+    - 3 gauss psf
+    - flux prior two-sided erf
+    - using B&A shape prior
+
+
 - sfit-noisefree-mcal-e01
     - adding some noise but not a full degrade run
 - sfit-noisefree-mcal-e02
