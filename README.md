@@ -42,8 +42,9 @@ metacal
 
 - sfit-degrade-e03
     - 3 gauss psf
-    - adding simpler but smoother priors
     - B&A prior to prevent fitting problem
+    - using simpler but smoother priors: multi-gauss for T based
+        on actual distribution, but two-sided erf for flux
 
 - sfit-mcal-e01
     - just do max like and get metacal mean pars
